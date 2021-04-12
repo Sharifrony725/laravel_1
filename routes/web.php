@@ -58,6 +58,6 @@ Route::get('/products/{id?}', function ($id = null) {
 
 //Name Route 
 Route::get('/home' ,[HomeController::class, 'index'])->name('home.index');
-Route::get('user/{name?}', [UserController::class,'index']);
+//Route::get('user/{name?}', [UserController::class,'index']);
 Route::resource('photos', PhotoController::class);
-
+Route::get('/user',[UserController::class,'index']); 
